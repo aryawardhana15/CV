@@ -45,6 +45,84 @@ body {
     text-align: center;
 }
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&family=Roboto:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Judul */
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #c2bebe;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/* Subjudul */
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #34495e;
+}
+
+/* Teks Biasa */
+p, li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #c2bebe;
+    line-height: 1.6;
+}
+
+/* Kontak dan Informasi Tambahan */
+.contact-info p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+/* Motto */
+.motto {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #c2bebe;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Skill List */
+.skill-list li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #c2bebe;
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+/* Achievement List */
+.achievement-list li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #c2bebe;
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.medal, .semifinal, .award {
+    font-weight: 600;
+    color: #e67e22; /* Warna oranye untuk menonjolkan prestasi */
+}
+
 .sidebar img {
     width: 120px;
     height: 120px;
@@ -337,7 +415,8 @@ body {
     }
 
     .section .description {
-        font-size: 14px;    
+        font-size: 14px;   
+        margin-right: 40px; 
     }
 
     #achievements-list {
@@ -347,6 +426,73 @@ body {
    #deskripsi {
       padding-right: 40px;
    }
+}
+
+@media (max-width: 480px) {
+
+    .sidebar {
+        padding-right: 50px; /* Padding kanan untuk sidebar */
+    }
+
+    .container {
+        flex-direction: column; /* Tampilan vertikal untuk mobile */
+    }
+
+    .sidebar, .content {
+        width: 100%; /* Lebar penuh untuk mobile */
+    }
+
+    .sidebar img {
+        width: 100px; /* Ukuran foto lebih kecil di mobile */
+        height: 100px;
+        margin-right: 50px; /* Margin kanan untuk foto */
+    }
+
+    .sidebar .name {
+        margin-right: 50px; /* Margin kanan untuk nama */
+    }
+
+    .sidebar .contact-info {
+        margin-right: 50px; /* Margin kanan untuk info kontak */
+    }
+
+    .sidebar h1 {
+        font-size: 20px; /* Ukuran font lebih kecil di mobile */
+    }
+
+    .section h2 {
+        font-size: 16px; /* Ukuran font lebih kecil di mobile */
+    }
+
+    .section ul li {
+        font-size: 14px; /* Ukuran font lebih kecil di mobile */
+    }
+
+    .sidebar .motto {
+        font-size: small; /* Ukuran font lebih kecil untuk motto */
+        padding: 10px;
+    }
+
+    .sidebar .divider {
+        margin-left: -40px; /* Margin kiri negatif untuk divider */
+    }
+
+    .section .description {
+        font-size: 14px; /* Ukuran font lebih kecil untuk deskripsi */
+        margin-right: 40px; /* Margin kanan untuk deskripsi */
+    }
+
+    #achievements-list {
+        padding-right: 40px; /* Padding kanan untuk daftar prestasi */
+    }
+
+    #deskripsi {
+        padding-right: 40px; /* Padding kanan untuk elemen dengan ID deskripsi */
+    }
+
+    .job-list {
+        padding-right: 40px; /* Padding kanan untuk daftar pekerjaan */
+    }
 }
         
     </style>
@@ -370,7 +516,7 @@ body {
 
 <p class="motto">"Berkembang setiap hari, melampaui batas, dan menciptakan dampak."</p>
 
-<hr>
+
 
 <div class="skills">
     <section>
@@ -436,7 +582,7 @@ body {
             <!-- Pengalaman Kerja -->
             <div class="section">
                 <h2 class="wave-text">Pengalaman Kerja</h2>
-                <ul>
+                <ul class="job-list">
                     <li>Manajer Media Sosial dan Pengembangan - SMILE KIDS</li>
                     <li>Staff Support - LOKERDESAIN</li>
                 </ul>
